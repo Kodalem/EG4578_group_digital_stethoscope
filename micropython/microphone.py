@@ -20,8 +20,6 @@ async def record_audio(audio_in):
                    mode=I2S.RX, bits=BITS_PER_SAMPLE,
                    format=I2S.MONO, rate=SAMPLE_RATE,
                    ibuf = BUFFER_SIZE)
+    data = audio_in.read(BUFFER_SIZE)
+    return data
 
-    while True:
-        data = audio_in.read(BUFFER_SIZE)
-        print(data)
-        await asyncio.sleep(1)
