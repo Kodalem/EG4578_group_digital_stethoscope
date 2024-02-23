@@ -98,6 +98,17 @@ async def draw_plot_realtime_axis(y_axis, baseline=max_height // 2, line_thinkne
     display.update()
 
 # Probably a bad idea to use this function
+
+async def plot_frequency_response(frequency_response, magnitude):
+    # Clear the display
+    display.set_pen(BG)
+    display.clear()
+    # Draw the frequency response using lines
+    for i in range(len(frequency_response)):
+        display.line(i, 0, i, magnitude[i], 1)
+    # Update the display
+    display.update()
+
 async def draw_plot_realtime_axis_better(y_axis, y_axis_future, x_axis, x_axis_future, baseline=max_height // 2, line_thinkness=1, h=0, s=0, v=1):
     # Clear the display
 
@@ -143,3 +154,5 @@ if __name__ == "__main__":
     while True:
         draw_plot_realtime_axis(random.randint(0, max_height // 2))
         time.sleep(0.1)
+
+

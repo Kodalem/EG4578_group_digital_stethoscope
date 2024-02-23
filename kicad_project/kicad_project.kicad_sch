@@ -379,6 +379,127 @@
 				)
 			)
 		)
+		(symbol "Device:R"
+			(pin_numbers hide)
+			(pin_names
+				(offset 0)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "R"
+				(at 2.032 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "R"
+				(at 0 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at -1.778 0 90)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "R res resistor"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "R_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "R_0_1"
+				(rectangle
+					(start -1.016 -2.54)
+					(end 1.016 2.54)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "R_1_1"
+				(pin passive line
+					(at 0 3.81 270)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at 0 -3.81 90)
+					(length 1.27)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+		)
 		(symbol "MCU_RaspberryPi:RP2040"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -1487,6 +1608,405 @@
 			)
 		)
 	)
+	(wire
+		(pts
+			(xy 236.22 92.71) (xy 224.79 92.71)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "114e8b99-524e-4e8c-8bc1-6c62b7c8d064")
+	)
+	(wire
+		(pts
+			(xy 229.87 72.39) (xy 224.79 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "1cf44c5c-3ab9-4ff5-aeca-7c850e1899e1")
+	)
+	(wire
+		(pts
+			(xy 236.22 102.87) (xy 224.79 102.87)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "29c639bf-2e27-42f4-8b84-f8e12aac2215")
+	)
+	(wire
+		(pts
+			(xy 224.79 59.69) (xy 250.19 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "34b42d50-e986-4cd1-a628-345374d797a1")
+	)
+	(wire
+		(pts
+			(xy 236.22 105.41) (xy 224.79 105.41)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "362319d0-d49e-4cae-b17f-2800852cb367")
+	)
+	(wire
+		(pts
+			(xy 224.79 130.81) (xy 248.92 130.81)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "78e7e4ce-7750-4961-80cc-6b153b5d511d")
+	)
+	(wire
+		(pts
+			(xy 236.22 97.79) (xy 224.79 97.79)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "81202124-60b9-4464-9d0a-9e473a25f151")
+	)
+	(wire
+		(pts
+			(xy 236.22 107.95) (xy 224.79 107.95)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9c529ed0-ec47-4814-81cd-49f1208d1932")
+	)
+	(wire
+		(pts
+			(xy 232.41 110.49) (xy 236.22 110.49)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "9e53753f-15b8-4823-a66e-593792481dd1")
+	)
+	(wire
+		(pts
+			(xy 236.22 95.25) (xy 224.79 95.25)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a4594c9b-197b-4839-aee8-00784df5f8db")
+	)
+	(wire
+		(pts
+			(xy 224.79 125.73) (xy 248.92 125.73)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ad81d1cf-7951-4cbf-8287-147be6815466")
+	)
+	(wire
+		(pts
+			(xy 224.79 128.27) (xy 248.92 128.27)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b38ae063-fde4-4f09-b88b-809092195de3")
+	)
+	(wire
+		(pts
+			(xy 236.22 87.63) (xy 224.79 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b3c2d991-cb7a-4014-9141-2c1d8933c6db")
+	)
+	(wire
+		(pts
+			(xy 236.22 90.17) (xy 224.79 90.17)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c20eaf45-1e25-4668-b365-bafb93c8daee")
+	)
+	(wire
+		(pts
+			(xy 229.87 77.47) (xy 224.79 77.47)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d6e161b1-1380-45cc-bde0-e3cf0c377ccb")
+	)
+	(wire
+		(pts
+			(xy 236.22 100.33) (xy 224.79 100.33)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d7b4fded-f8dc-4baf-bde3-88a23fcd0963")
+	)
+	(wire
+		(pts
+			(xy 229.87 74.93) (xy 224.79 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "dc5f0328-90e3-40b1-bbda-f616964bd3c4")
+	)
+	(wire
+		(pts
+			(xy 224.79 62.23) (xy 250.19 62.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e92cc194-e46f-482b-949e-8d74b356fcea")
+	)
+	(wire
+		(pts
+			(xy 224.79 57.15) (xy 250.19 57.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f0b14970-094b-4095-a9b0-414a253b3f82")
+	)
+	(label "SWB"
+		(at 236.22 90.17 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "143d74b8-fd00-467e-acfb-ceb34f230eae")
+	)
+	(label "SWX"
+		(at 236.22 92.71 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "157b79e0-9b23-47de-9dcc-7f0079094c8e")
+	)
+	(label "I2S_BCK_IN"
+		(at 248.92 128.27 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "1c051857-3709-437a-8c50-2bb156b621a4")
+	)
+	(label "I2S_DATA_OUT"
+		(at 250.19 57.15 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2ffcf4fe-b76b-4654-b195-004e36c773cc")
+	)
+	(label "LCD_MOSI"
+		(at 236.22 105.41 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "30b4462a-9c8c-4e51-bf22-19620abb5358")
+	)
+	(label "LCD_CS"
+		(at 236.22 100.33 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "32cee040-a2c7-471c-bf9c-171e9f0ffeed")
+	)
+	(label "LED_G"
+		(at 229.87 74.93 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "3f9a4397-cb0e-4da4-ad0b-a3dd329d763a")
+	)
+	(label "I2S_DATA_IN"
+		(at 248.92 125.73 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "5a96742a-0d00-4b9c-8ac0-63fd8103f020")
+	)
+	(label "I2S_BCK_OUT"
+		(at 250.19 59.69 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "7782d67a-c594-435d-8524-9fa11df7ec31")
+	)
+	(label "LCD_BLACKLIGHT_ENABLE"
+		(at 236.22 107.95 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "8b462a3d-5c9b-43c5-bb21-00f58949362f")
+	)
+	(label "LED_R"
+		(at 229.87 72.39 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "914b5577-9d62-47c8-a5a7-2310fd8d155f")
+	)
+	(label "SWY"
+		(at 236.22 95.25 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "98ab6d99-323e-4c8c-875e-13260c317330")
+	)
+	(label "LCD_MOSI"
+		(at 236.22 102.87 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "aa307a5f-f52e-41bd-9814-86a2ecd55e73")
+	)
+	(label "LED_B"
+		(at 229.87 77.47 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "b7f877b4-bd9f-4bc6-8488-d46269cba9eb")
+	)
+	(label "I2S_LRCK_IN"
+		(at 248.92 130.81 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ce1fba1f-3cb3-4ae0-89e5-9c38e19d25c3")
+	)
+	(label "LCD_TF"
+		(at 236.22 110.49 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e2423615-9325-4e44-85b7-27ef2c3a805d")
+	)
+	(label "LCD_DC"
+		(at 236.22 97.79 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "e4acfda4-4ac0-45ed-bca0-aa85753ec968")
+	)
+	(label "I2S_LRCK_OUT"
+		(at 250.19 62.23 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "ea365d46-6d50-447b-8b77-c2c8fee3b27e")
+	)
+	(label "SWA"
+		(at 236.22 87.63 0)
+		(fields_autoplaced yes)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "f06e22ab-0485-466f-9968-bccf7f8542d2")
+	)
 	(symbol
 		(lib_id "Device:Microphone_Condenser")
 		(at 52.07 57.15 0)
@@ -1552,6 +2072,73 @@
 			(project "kicad_project"
 				(path "/764e2547-42e0-402c-b686-b2aefa228f49"
 					(reference "MK1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 228.6 110.49 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "cdd9cc9a-a3b4-4ec1-8d50-04a0a985ad83")
+		(property "Reference" "R1"
+			(at 228.6 113.03 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "330_Ohm"
+			(at 231.14 115.57 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 228.6 112.268 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 228.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 228.6 110.49 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "2"
+			(uuid "aa592a21-0bfc-41ea-b38b-5e838a04fb56")
+		)
+		(pin "1"
+			(uuid "6deb9fd4-fa6f-4ab4-80e7-934034ebd39d")
+		)
+		(instances
+			(project "kicad_project"
+				(path "/764e2547-42e0-402c-b686-b2aefa228f49"
+					(reference "R1")
 					(unit 1)
 				)
 			)
@@ -1629,7 +2216,7 @@
 	)
 	(symbol
 		(lib_id "MCU_RaspberryPi:RP2040")
-		(at 325.12 74.93 0)
+		(at 199.39 95.25 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -1638,7 +2225,7 @@
 		(fields_autoplaced yes)
 		(uuid "f207a995-b71e-4288-b62e-c0c82c83b254")
 		(property "Reference" "U1"
-			(at 327.3141 119.38 0)
+			(at 201.5841 139.7 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1647,7 +2234,7 @@
 			)
 		)
 		(property "Value" "RP2040"
-			(at 327.3141 121.92 0)
+			(at 201.5841 142.24 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1656,7 +2243,7 @@
 			)
 		)
 		(property "Footprint" "Package_DFN_QFN:QFN-56-1EP_7x7mm_P0.4mm_EP3.2x3.2mm"
-			(at 325.12 74.93 0)
+			(at 199.39 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1665,7 +2252,7 @@
 			)
 		)
 		(property "Datasheet" "https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf"
-			(at 325.12 74.93 0)
+			(at 199.39 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1674,7 +2261,7 @@
 			)
 		)
 		(property "Description" "A microcontroller by Raspberry Pi"
-			(at 325.12 74.93 0)
+			(at 199.39 95.25 0)
 			(effects
 				(font
 					(size 1.27 1.27)
