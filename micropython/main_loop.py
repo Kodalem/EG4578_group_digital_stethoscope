@@ -176,10 +176,8 @@ async def main_loop():
             await record_mode(audio_in)
         # Check if button B is pressed
         elif button_b.is_pressed():
-            # Do nothing
-            pass
             # Filtered record mode
-            # await record_mode(audio_in)
+            await record_mode(audio_in)
         # Check if button X is pressed
         elif button_x.is_pressed():
             # Check and cancel the filtered playback mode coroutine

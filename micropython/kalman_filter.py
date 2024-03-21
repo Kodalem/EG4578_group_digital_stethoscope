@@ -90,64 +90,47 @@ def update_state_sage_husa_adaptive(x_u, P_u, z_u, H_u, R_u, I_u, adaptive_facto
 async def shark_filter(byte_data_np):
     # Filtered data
     filtered_data = []
-
     # Array dimensions
     dim_x = 1
     dim_z = 1
-
     # State mean
     x = np.array([[0]])
-
     # Covariance matrix
     P = np.array([[10]])
-
     # Measurement function
     H = np.array([[1]])
-
     # Measurement covariance, add more dimensions in diagonal for more measurements
     R = np.eye(dim_z) * 1
-
     # Process noise
     Q = np.eye(dim_x) * 0.0115
-
     # Identity matrix
     I = np.eye(dim_x)
-
     # Forgetting factor
-    forgetting_factor = 0.55
-
+    forgetting_factor = 0.66
     # Step count
     step_count = 1
-
     # Design constants
-    design_constant_0 = 1.25
-    design_constant_1 = 3.75
+    design_constant_0 = 1.15
+    design_constant_1 = 3.45
 
     # Initial process noise info series
     r = R[0]
     q = Q[0]
-
     # Filter each sample in the data
     for sample in byte_data_np:
 
         # New process noise info series
         R, v = new_process_noise_info(forgetting_factor, step_count, R, H, P, x, sample, r)
-
         # Predict
         x, P = predict_state_sage_husa(x, P, Q, forgetting_factor, step_count, r)
-
         # Calculate adaptive factor
         adaptive_factor = adaptive_factor_function(design_constant_0, design_constant_1, H, P, R, x, sample)
-
         # Update
         x, P, K = update_state_sage_husa_adaptive(x, P, sample, H, R, I, adaptive_factor)
-
         # New measurement noise info series
         Q, r = new_measurement_noise_info(forgetting_factor, step_count, Q, q, x, K, P, v)
-
         # Increment step count
         step_count += 1
-
         # Append the filtered data
         filtered_data.append(x[0])
 
